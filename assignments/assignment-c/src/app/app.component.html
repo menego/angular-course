@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-primary"
+        (click)="switchPDisplay()">
+        Display Details
+      </button>
+      <p [hidden]="toggleDisplayP">Sercret Password = tuna.</p>
+      <p *ngFor="let log of clickLogs" [ngClass]="{fifthOnwards: log >= 5}">
+        Log click #{{log}}.
+      </p>
+    </div>
+  </div>
+</div>
