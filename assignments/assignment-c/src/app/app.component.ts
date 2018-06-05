@@ -17,7 +17,7 @@ export class AppComponent {
 
   switchPDisplay() {
     this.toggleDisplayP = !this.toggleDisplayP;
-    this.clickLogs.push(++this.clickNumber);
+    this.clickLogs.push(new Date());
   }
 
 }
